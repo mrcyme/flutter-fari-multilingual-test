@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_change_language/LacaleString.dart';
+import 'LocaleString.dart';
 import 'HomePage.dart';
 import 'package:get/get.dart';
-
 
 void main() {
   runApp(MyApp());
@@ -15,18 +14,12 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       translations: LocaleString(),
-      locale: Locale('en','US'),
+      locale: Locale('en', 'US'),
       title: 'Flutter Demo',
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
       home: HomePage(),
     );
   }
 }
-
-
-
-
-
